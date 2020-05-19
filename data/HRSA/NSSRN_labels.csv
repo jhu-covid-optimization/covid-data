@@ -1,0 +1,821 @@
+start,end,name,label
+0,5,ID_COUNTY,Randomly assigned ID for county file
+6,6,Q1,Actively licensed RN
+7,8,Q2STATE,State of first RN license
+9,12,Q2YEAR,Year of first RN license
+13,13,Q2_DIV,Census division State of first RN license
+14,14,Q3_PUF,Initial RN degree/credential for PUF
+15,15,Q5_DIV,Census division initial RN ed program
+16,16,Q6_0,No degree prior to RN ed program
+17,18,Q6_1,AD prior to RN ed program
+19,20,Q6_2,Bachelor's prior to RN ed program
+21,22,Q6_3,Master's prior to RN ed program
+23,24,Q6_4,Doctorate prior to RN ed program
+25,26,Q6_5,Other degree prior to RN ed program
+27,28,Q7,Field for highest degree before RN ed
+29,29,Q8,Licensed LPN/LVN
+30,30,Q9_0,No health-related position before RN ed
+31,31,Q9_1,Nursing Aide/Asst before RN ed
+32,32,Q9_2,Home health aide/asst before RN ed
+33,33,Q9_3,LPN/LVN before RN ed
+34,34,Q9_4,EMT before RN ed
+35,35,Q9_5,Medical asst before RN ed
+36,36,Q9_6,Dental asst before RN ed
+37,37,Q9_7,Allied Health/Lab tech before RN ed
+38,38,Q9_8,Health care manager before RN ed
+39,39,Q9_9,Health care clerk before RN ed
+40,40,Q9_10,Military med corps before RN ed
+41,41,Q9_11,MD before RN ed
+42,42,Q9_12,Midwife before RN ed
+43,43,Q9_13,Other health-related position before RN ed
+44,44,Q9_14,Student Nurse Externship
+45,45,Q9_15,Mental Health/Psychiatric work before RN ed
+46,46,Q9_16,Health Educator before RN ed
+47,47,Q10_1,Financed initial RN ed - Health-related employment
+48,48,Q10_2,Financed initial RN ed - Nonhealth-related employment
+49,49,Q10_3,Financed initial RN ed - Other household members
+50,50,Q10_4,Financed initial RN ed - Personal savings
+51,51,Q10_5,Financed initial RN ed - Other family resources
+52,52,Q10_6,Financed initial RN ed - Employer tuition reimbursement
+53,53,Q10_7,Financed initial RN ed - Federal scholarship/grant
+54,54,Q10_8,Financed initial RN ed - Federal assisted loan
+55,55,Q10_9,Financed initial RN ed - Other loan
+56,56,Q10_10,Financed initial RN ed - State/local gov't scholarship/grant
+57,57,Q10_11,Financed initial RN ed - Non-gov't scholarship/grant
+58,58,Q10_12,Financed initial RN ed - Other resources
+59,59,Q11A_0,No emergency preparedness training received/provided
+60,61,Q11A_1,Training received/provided - Chemical accident/attack
+62,63,Q11A_2,Training received/provided - Nuclear/radiological accident/attack
+64,65,Q11A_3,Training received/provided - Infectious disease epidemics
+66,67,Q11A_4,Training received/provided - Biological accident/attack
+68,69,Q11A_5,Training received/provided - Natural disaster
+70,71,Q11A_6,Training received/provided - Other public health emergencies
+72,75,Q11BPROV,Total number of training hours provided
+76,79,Q11BREC,Total number of training hours received
+80,81,Q11C,Best prepared emergency area
+82,82,Q12,Know disaster/emergency plan at work
+83,83,Q13,Additional degrees after RN program
+84,84,Q14,Completed APRN program
+85,86,Q14A_A,Prepared as NP
+87,88,Q14B_A,NP program length
+89,90,Q14C_A,Highest NP program credential
+91,94,Q14D_A,Year received NP credential
+95,96,Q14E_A,NP certification national org
+97,98,Q14E2_A,NP certification required for job
+99,100,Q14F_A,NP State Board license/recognition
+101,102,Q14F2_A,NP State Board license/recognition required for job
+103,104,Q14A_B,Prepared as CNS
+105,106,Q14B_B,CNS program length
+107,108,Q14C_B,Highest CNS program credential
+109,112,Q14D_B,Year received CNS credential
+113,114,Q14E_B,CNS certification national org
+115,116,Q14E2_B,CNS certification required for job
+117,118,Q14F_B,CNS State Board license/recognition
+119,120,Q14F2_B,CNS State Board license/recognition required for job
+121,122,Q14A_C,Prepared as NM
+123,124,Q14B_C,NM program length
+125,126,Q14C_C,Highest NM program credential
+127,130,Q14D_C,Year received NM credential
+131,132,Q14E_C,NM certification national org
+133,134,Q14E2_C,NM certification required for job
+135,136,Q14F_C,NM State Board license/recognition
+137,138,Q14F2_C,NM Sate Board license/recognition required for job
+139,140,Q14A_D,Prepared as NA
+141,142,Q14B_D,NA program length
+143,144,Q14C_D,Highest NA program credential
+145,148,Q14D_D,Year received NA credential
+149,150,Q14E_D,NA certification national org
+151,152,Q14E2_D,NA certification required for job
+153,154,Q14F_D,NA State Board license/recognition
+155,156,Q14F2_D,NA State Board license/recognition required for job
+157,157,Q15,Currently enrolled in formal ed program 2008
+158,159,Q16,Type of formal ed program 2008
+160,161,Q17A,FT/PT student 2008
+162,163,Q17B,Percent distance-based courses 2008
+164,165,Q18,Type of degree/certificate 2008
+166,166,Q19,Currently employed in nursing 2008
+167,168,Q20,Active RN license required
+169,200,Q21CITY,City/town principal RN position
+201,247,Q21CNTY,County principal RN position
+248,250,Q21_FIPSCNTY,FIPS county 2008 principal RN position
+251,252,Q21STATE,State principal RN position
+253,254,Q21_FIPSST,FIPS state 2008 principal RN position
+255,256,Q21_DIV,Census division 2008 principal RN position
+257,261,Q21_FIPS,FIPS code 2008 principal RN position
+262,265,Q21_MSA,Geocode for principal RN position MSA on 3/10/2008
+266,270,Q21_CBSA,Geocode for principal RN position CBSA on 3/10/2008
+271,272,Q22,Principal RN position type 2008
+273,274,Q25,FT/PT principal RN position in 2008
+275,276,Q26,Months worked principal RN position 2008
+277,278,Q27A,Number hours worked
+279,280,Q27B,Number on-call hours
+281,282,Q27C,Number overtime hours
+283,284,Q27D,Number mandatory overtime hours
+285,287,Q27E,Number paid/unpaid stand-by hours
+288,290,Q27F,Number hours paid stand-by rate
+291,293,Q28A,Percent patient care & charting
+294,296,Q28B,Percent non-nursing tasks
+297,299,Q28C,Percent consultation
+300,302,Q28D,Percent supervision & management
+303,305,Q28E,Percent administration
+306,308,Q28F,Percent research
+309,311,Q28G,"Percent teaching, orientating students"
+312,314,Q28H,Percent other activities
+315,316,Q29A_1,Level of care - General/specialty inpatient
+317,318,Q29A_2,Level of care - Critical/intensive care
+319,320,Q29A_3,"Level of care - Step down, transitional care"
+321,322,Q29A_4,Level of care - Sub-acute care
+323,324,Q29A_5,Level of care - Emergency care
+325,326,Q29A_6,Level of care - Urgent care
+327,328,Q29A_7,Level of care -Rehabilitation
+329,330,Q29A_8,Level of care - Long-term care
+331,332,Q29A_9,Level of care - Surgery
+333,334,Q29A_10,Level of care - Ambulatory care
+335,336,Q29A_11,Level of care - Ancillary care
+337,338,Q29A_12,Level of care - Home health
+339,340,Q29A_13,Level of care - Public health
+341,342,Q29A_14,Level of care - Education
+343,344,Q29A_15,Level of care - Business
+345,346,Q29A_16,Level of care - Research
+347,348,Q29A_17,Level of care - Other specify
+349,350,Q29A_18,Level of care - Informatics
+351,352,Q29A_19,Level of care - Flight nurse/med air transport
+353,354,Q29B,Primary patient population
+355,356,Q29C_1,No patient care principal position
+357,358,Q29C_2,Clinical specialty - General surgery
+359,360,Q29C_3,Clinical specialty - Critical care
+361,362,Q29C_4,Clinical specialty - Cardiac care
+363,364,Q29C_5,Clinical specialty - Chronic care
+365,366,Q29C_6,Clinical specialty - Dermatology
+367,368,Q29C_7,Clinical specialty - Emergency/trauma
+369,370,Q29C_8,Clinical specialty - Gastrointestinal
+371,372,Q29C_9,Clinical specialty - Gynecology
+373,374,Q29C_10,Clinical specialty - Hospice
+375,376,Q29C_11,Clinical specialty - Infectious disease
+377,378,Q29C_12,Clinical specialty - Labor & delivery
+379,380,Q29C_13,Clinical specialty - Neurological
+381,382,Q29C_14,Clinical specialty - Obstetrics
+383,384,Q29C_15,Clinical specialty - Occupational health
+385,386,Q29C_16,Clinical specialty - Oncology
+387,388,Q29C_17,Clinical specialty - Primary care
+389,390,Q29C_18,Clinical specialty - Psychiatric/mental health
+391,392,Q29C_19,Clinical specialty - Pulmonary/respiratory
+393,394,Q29C_20,Clinical specialty - Radiology
+395,396,Q29C_21,Clinical specialty - Renal/dialysis
+397,398,Q29C_22,Clinical specialty - No specific area
+399,400,Q29C_23,Clinical specialty - Other specialty
+401,402,Q29C_24,Clinical specialty - Plastic/Cosmetic Surgery
+403,404,Q29C_25,Clinical specialty - Orthopedic
+405,406,Q29C_26,Clinical specialty - Endocrinology
+407,408,Q29C_27,Clinical specialty - Urology
+409,410,Q29C_28,Clinical specialty - Infusion/IV
+411,412,Q29C_29,Clinical specialty - Ophthalmology
+413,414,Q29C_30,Clinical specialty - Otolaryngology/ENT
+415,420,Q30,Pre-tax earnings principal RN position 2008
+421,422,Q31,Represented by labor union 2008
+423,424,Q32A,Intentions regarding principal RN position
+425,426,Q32B,Plans to remain in nursing profession
+427,428,Q33,Hold other paid RN positions 2008
+429,430,Q34_1,Secondary RN position - Employee at org/facility
+431,432,Q34_2,Secondary RN position - Employed thru employment agency
+433,434,Q34_3,Secondary RN position - Employed as traveling nurse
+435,436,Q34_4,"Secondary RN position - Self-employed, working as-needed"
+437,438,Q35_1,Secondary RN position - Hospital setting
+439,440,Q35_2,Secondary RN position - Nursing home/Extended care setting
+441,442,Q35_3,Secondary RN position - Academic ed program setting
+443,444,Q35_4,Secondary RN position - Home health setting
+445,446,Q35_5,Secondary RN position - Public/community health setting
+447,448,Q35_6,Secondary RN position - School health service setting
+449,450,Q35_7,Secondary RN position - Occupational health setting
+451,452,Q35_8,Secondary RN position - Ambulatory care setting
+453,454,Q35_9,Secondary RN position - Insurance claims/benefits setting
+455,456,Q35_10,"Secondary RN position - Telehealth, telenursing or call center setting"
+457,458,Q35_11,Secondary RN position - Other specify (setting)
+459,460,Q35_12,Secondary RN position - Military/Reserves/National Guard setting
+461,462,Q35_13,Secondary RN position - Medical Legal setting
+463,464,Q35_14,Secondary RN position - Consultant/Contractor setting
+465,466,Q36A_1,Weeks per year (additional RN job #1)
+467,468,Q36B_1,Avg hours per week (additional RN job #1)
+469,470,Q36C_1,State (additional RN job #1)
+471,472,Q36A_2,Weeks per year (additional RN job # 2)
+473,474,Q36B_2,Avg hours per week (additional RN job #2)
+475,476,Q36C_2,State (additional RN job #2)
+477,478,Q36A_3,Weeks per year (all other RN jobs)
+479,480,Q36B_3,Avg hours per week (all other RN jobs)
+481,486,Q37,Pre-tax earnings other RN positions 2008
+487,488,Q38,Paid RN work intentions
+489,490,Q39A,Months actively looking for paid RN work
+491,492,Q40,Looking for FT/PT position
+493,494,Q41,Plan to return to paid RN work
+495,496,Q42,Last employed/self-employed as RN
+497,498,Q43_1,Reason not RN - Retired
+499,500,Q43_2,Reason not RN - Personal
+501,502,Q43_3,Reason not RN - Burnout
+503,504,Q43_4,Reason not RN - Work stress
+505,506,Q43_5,Reason not RN - Scheduling
+507,508,Q43_6,Reason not RN - Physical demands
+509,510,Q43_7,Reason not RN - Disability
+511,512,Q43_8,Reason not RN - Illness
+513,514,Q43_9,Reason not RN - Inadequate staffing
+515,516,Q43_10,Reason not RN - Low salary
+517,518,Q43_11,Reason not RN - Out-of-date skills
+519,520,Q43_12,Reason not RN - Liability concerns
+521,522,Q43_13,Reason not RN - Lack of collaboration
+523,524,Q43_14,Reason not RN - Unable to be RN on professional level
+525,526,Q43_15,Reason not RN - Lack advancement opportunities
+527,528,Q43_16,Reason not RN - Lack good leadership
+529,530,Q43_17,Reason not RN - Career change
+531,532,Q43_18,Reason not RN - Difficulty finding RN position
+533,534,Q43_19,Reason not RN - Travel
+535,536,Q43_20,Reason not RN - Volunteering in nursing
+537,538,Q43_21,Reason not RN - Back to school
+539,540,Q43_22,Reason not RN - Other reason
+541,542,Q44,Non-RN employment 2008
+543,544,Q45,Non-RN employment health-related 2008
+545,546,Q46A,Field of non-RN principal position
+547,548,Q46B,Non-RN position job title
+549,550,Q47,Months worked non-RN position
+551,552,Q48,Avg hours per week non-RN position
+553,558,Q49,Pre-tax earnings non-RN position
+559,560,Q51,Left nursing 1 or more years since becoming RN
+561,561,Q52,Employed as RN 1 year ago
+562,563,Q53,FT/PT principal RN position in 2007
+564,565,Q54,Employed with current employer in 2007
+566,599,Q55CITY,City/town 2007 principal RN position
+600,631,Q55CNTY,County 2007 principal RN position
+632,634,Q55_FIPSCNTY,FIPS county 2007 principal RN position
+635,636,Q55STATE,State 2007 principal RN position
+637,638,Q55_FIPSST,FIPS state 2007 principal RN position
+639,640,Q55_DIV,Census division State of 2007 RN position
+641,645,Q55_FIPS,FIPS code 2007 principal RN position
+646,649,Q55_MSA,Geocode for 2007 principal RN position MSA on 3/10/2007
+650,654,Q55_CBSA,Geocode for 2007 principal RN position CBSA on 3/10/2007
+655,656,Q56_1,Job change - Burnout
+657,658,Q56_2,Job change - Work stress
+659,660,Q56_3,Job change - Interest in other position
+661,662,Q56_4,Job change - Lack advancement
+663,664,Q56_5,Job change - Lack collaboration
+665,666,Q56_6,Job change - Lack leadership
+667,668,Q56_7,Job change - Career advancement
+669,670,Q56_8,Job change - Inadequate staffing
+671,672,Q56_9,Job change - Differences with colleagues
+673,674,Q56_10,Job change - Physical demands
+675,676,Q56_11,Job change - Do kind of nursing I like
+677,678,Q56_12,Job change - Better pay/benefits
+679,680,Q56_13,Job change - Scheduling
+681,682,Q56_14,Job change - Relocation
+683,684,Q56_15,Job change - Shift in positions/reorganization
+685,686,Q56_16,Job change - Lay offs/downsizing
+687,688,Q56_17,Job change - Sign-on bonus offered
+689,690,Q56_18,Job change - Personal
+691,692,Q56_19,Job change - Back to school
+693,694,Q56_20,Job change - Retired
+695,696,Q56_21,Job change - Disability
+697,698,Q56_22,Job change - Illness
+699,700,Q56_23,Job change - Other
+701,702,Q56_24,Job change - Contract ended
+703,703,Q58,Satisfaction with principal/most recent RN job
+704,745,Q59CITY,Current city residence
+746,792,Q59CNTY,Current county residence
+793,795,Q59_FIPSCNTY,FIPS county 2008 residence
+796,797,Q59STATE,Current state residence
+798,799,Q59_FIPSST,FIPS State 2008 residence
+800,801,Q59_DIV,Census division 2008 residence
+802,806,Q59_FIPS,FIPS code 2008 residence
+807,810,Q59_MSA,Geocode for 2008 residence MSA on 3/10/2008
+811,815,Q59_CBSA,Geocode for 2008 residence CBSA on 3/10/2008
+816,816,Q60,Reside in same city/town a year ago
+817,848,Q61CITY,City 2007 residence
+849,880,Q61CNTY,County 2007 residence
+881,883,Q61_FIPSCNTY,FIPS county 2007 residence
+884,885,Q61STATE,State 2007 residence
+886,887,Q61_FIPSST,FIPS State 2007 residence
+888,889,Q61_DIV,Census division 2007 residence
+890,894,Q61_FIPS,FIPS code 2007 residence
+895,898,Q61_MSA,Geocode for 2007 residence MSA on 3/10/2007
+899,903,Q61_CBSA,Geocode for 2007 residence CBSA on 3/10/2007
+904,904,Q62,Gender
+905,905,Q65_1,No other languages
+906,906,Q65_2,Spanish language
+907,907,Q65_3,Filipino language
+908,908,Q65_5,French language
+909,909,Q66,Marital status
+910,910,Q67_1,No dependents at home
+911,911,Q67_2,Children less than 6 years at home
+912,912,Q67_3,Children 6 to 18 years at home
+913,913,Q67_4,Other adults at home
+914,914,Q67_5,Others living elsewhere
+915,915,Q68,"Current, pre-tax annual household income"
+916,917,Q70A,Current National RN certifications
+918,919,Q70B_0,No current skill-based certifications
+920,921,Q70B_1,Life Support certification
+922,923,Q70B_2,Resuscitation certification
+924,925,Q70B_3,Emergency medicine certification
+926,927,Q70B_4,Trauma certification
+928,929,Q70B_5,1st Other skill-based certification
+930,931,Q70B_6,2nd Other skill-based certification
+932,933,Q70C_31,Nurse Midwife (CNM) certification
+934,935,Q70C_32,Nurse Anesthetist (CRNA) certification
+936,937,Q70D_0,Other National RN certifications
+938,939,AGE_GP,Ages grouped
+940,940,APN_CNS,Clinical Nurse Specialist status
+941,942,APN_COMBOS,APRN status combinations
+943,943,APN_NA,Nurse Anesthetist status
+944,944,APN_NM,Nurse midwife status
+945,945,APN_NP,Nurse practitioner status
+946,947,CH_CAREER,Employment change - career
+948,949,CH_OTHER,Employment change - other
+950,951,CH_PERSFAM,Employment change - personal
+952,953,CH_RETIRE,Employment change - retirement
+954,955,CH_WRKPLCE,Employment change - workplace
+956,957,DOMFUNCT,Dominant function
+958,959,EDU_ENRLD,Enrolled upgrade ed program
+960,960,EMP_STAT,Employment status 2008 detailed
+961,961,EMP08_07,Employed in nursing 2008 & 2007
+962,962,EMPL_07,RN employment status 2007
+963,963,EMPL_08,RN employment status 2008
+964,965,EMPL_ORG,Employed by organization/facility
+966,967,EMPL_SELF,Self-employed in nursing
+968,969,EMPL_TES,Employed by Temporary Employment Service (TES)
+970,972,G_CO_07,Geocode for County on 3/10/2007
+973,975,G_CO_08,Geocode for County on 3/10/2008
+976,980,G_FIPS07,Geocode for State employment/residence on 3/10/2007
+981,985,G_FIPS08,Geocode for State employment/residence on 3/10/2008
+986,987,G_MSA07,Geocode for metro/non-metro on 3/10/2007
+988,989,G_MSA08,Geocode for metro/non-metro on 3/10/2008
+990,990,G_RG07,Geocode for Census Division on 3/10/2007
+991,991,G_RG08,Geocode for Census Division on 3/10/2008
+992,995,G_SMSA07,Geocode for MSA on 3/10/2007
+996,999,G_SMSA08,Geocode for MSA on 3/10/2008
+1000,1001,G_ST07,Geocode for State on 3/10/2007
+1002,1003,G_ST08,Geocode for State on 3/10/2008
+1004,1004,GD_GEOST,State of graduations v. current GEO State
+1005,1005,GRAD_WHR,Graduated U.S. or non-U.S. RN program
+1006,1007,GRAD_YR,Initial RN ed graduation year
+1008,1011,H_YEAR,Year received highest nursing/nursing-related ed
+1012,1015,HN_YEAR,Year received highest nursing ed
+1016,1019,HRS_YR,Estimated hours per year for principal RN position
+1020,1020,LI_RESST,State of first license versus GEO State for 2008
+1021,1021,LICST_CT,Number of States in which RN currently licensed
+1022,1023,LST_WRKD,Years since paid RN
+1024,1024,MAR_ADULT,Marital status & adult dependants
+1025,1026,MAR_CHLD,Marital status & children
+1027,1028,NAPNCERT,Advanced practice RN certification category count
+1029,1030,NCHREASN,Reasons position change category count
+1031,1031,NFINANCE,Finance means initial RN ed category count
+1032,1032,NHLTHJOB,Health-related jobs pre-RN category count
+1033,1033,NLANG,Non-English languages spoken category count
+1034,1034,NLC,RN Licensure Compact
+1035,1036,NLEVCARE,Levels of care principal RN job category count
+1037,1038,NNOTRN,Reasons not working as RN category count
+1039,1040,NNTLCERT,National nursing certification category count
+1041,1042,NOT_CAREER,Not working - career
+1043,1044,NOT_OTHER,Not working - other
+1045,1046,NOT_PERSFAM,Not working - personal
+1047,1048,NOT_RETIRE,Not working - retired
+1049,1050,NOT_WORKPLACE,Not working - workplace
+1051,1052,NSKLCERT,Skill-based certification category count
+1053,1054,NSPECIALTY,Clinical specialties principal RN job category count
+1055,1055,NTRAINING,Emergency/disaster training areas category count
+1056,1057,NWKSTATE,Number of States in which RN works
+1058,1058,OASIAN,Other Asian (non-Filipino) language
+1059,1060,POSITION,Position title grouped
+1061,1062,PREP_SUM_PUF,Highest RN/RN-related ed summary for PUF
+1063,1063,RACE_GP,Race/ethnicity grouped
+1064,1065,RCCC3Q21,Standard three category RUCA code - Q21
+1066,1067,RCCC3Q55,Standard three category RUCA code - Q55
+1068,1069,RCCC3Q59,Standard three category RUCA code - Q59
+1070,1071,RCCC3Q61,Standard three category RUCA code - Q61
+1072,1073,RCCC4Q21,Standard four category RUCA code - Q21
+1074,1075,RCCC4Q55,Standard four category RUCA code - Q55
+1076,1077,RCCC4Q59,Standard four category RUCA code - Q59
+1078,1079,RCCC4Q61,Standard four category RUCA code - Q61
+1080,1081,RCTY_SME,County of residence in 2007 and 2008
+1082,1082,REG_B_ED,Census division of initial RN ed
+1083,1084,REG_EMPL,Census division of 2008 employment
+1085,1085,REG_RESI,Census division of 2008 residence
+1086,1086,RN_POP,RN working/living in U.S. 2008
+1087,1087,RST_SME,State of residence in 2007 and 2008
+1088,1089,SET07_08,RN employment setting 2007 versus 2008
+1090,1091,SETSUM07,Employment setting summary 2007
+1092,1093,SETSUM08,Employment setting summary 2008
+1094,1094,SOURCE,Data collection type
+1095,1102,SUBMISSION_DATE,Submission date
+1103,1106,TOTRNHRS_YR,Total RN hours worked per year
+1107,1112,TOTSAL,Total earnings from all nursing and non-nursing employment
+1113,1113,YRSNC_GP,Years since graduated from initial RN ed grouped
+1114,1114,IMPQ2STATE,Imputation flag for Q2STATE
+1115,1115,IMPQ2YEAR,Imputation flag for Q2YEAR
+1116,1116,IMPQ3,Imputation flag for Q3
+1117,1117,IMPQ4MONTH,Imputation flag for Q4MONTH
+1118,1118,IMPQ4YEAR,Imputation flag for Q4YEAR
+1119,1119,IMPQ5STATE,Imputation flag for Q5STATE
+1120,1120,IMPQ6_0,Imputation flag for Q6_0
+1121,1121,IMPQ6_1,Imputation flag for Q6_1
+1122,1122,IMPQ6_2,Imputation flag for Q6_2
+1123,1123,IMPQ6_3,Imputation flag for Q6_3
+1124,1124,IMPQ6_4,Imputation flag for Q6_4
+1125,1125,IMPQ6_5,Imputation flag for Q6_5
+1126,1126,IMPQ7,Imputation flag for Q7
+1127,1127,IMPQ8,Imputation flag for Q8
+1128,1128,IMPQ9_0,Imputation flag for Q9_0
+1129,1129,IMPQ9_1,Imputation flag for Q9_1
+1130,1130,IMPQ9_2,Imputation flag for Q9_2
+1131,1131,IMPQ9_3,Imputation flag for Q9_3
+1132,1132,IMPQ9_4,Imputation flag for Q9_4
+1133,1133,IMPQ9_5,Imputation flag for Q9_5
+1134,1134,IMPQ9_6,Imputation flag for Q9_6
+1135,1135,IMPQ9_7,Imputation flag for Q9_7
+1136,1136,IMPQ9_8,Imputation flag for Q9_8
+1137,1137,IMPQ9_9,Imputation flag for Q9_9
+1138,1138,IMPQ9_10,Imputation flag for Q9_10
+1139,1139,IMPQ9_11,Imputation flag for Q9_11
+1140,1140,IMPQ9_12,Imputation flag for Q9_12
+1141,1141,IMPQ9_13,Imputation flag for Q9_13
+1142,1142,IMPQ9_14,Imputation flag for Q9_14
+1143,1143,IMPQ9_15,Imputation flag for Q9_15
+1144,1144,IMPQ9_16,Imputation flag for Q9_16
+1145,1145,IMPQ10_1,Imputation flag for Q10_1
+1146,1146,IMPQ10_2,Imputation flag for Q10_2
+1147,1147,IMPQ10_3,Imputation flag for Q10_3
+1148,1148,IMPQ10_4,Imputation flag for Q10_4
+1149,1149,IMPQ10_5,Imputation flag for Q10_5
+1150,1150,IMPQ10_6,Imputation flag for Q10_6
+1151,1151,IMPQ10_7,Imputation flag for Q10_7
+1152,1152,IMPQ10_8,Imputation flag for Q10_8
+1153,1153,IMPQ10_9,Imputation flag for Q10_9
+1154,1154,IMPQ10_10,Imputation flag for Q10_10
+1155,1155,IMPQ10_11,Imputation flag for Q10_11
+1156,1156,IMPQ10_12,Imputation flag for Q10_12
+1157,1157,IMPQ11A_0,Imputation flag for Q11A_0
+1158,1158,IMPQ11A_1,Imputation flag for Q11A_1
+1159,1159,IMPQ11A_2,Imputation flag for Q11A_2
+1160,1160,IMPQ11A_3,Imputation flag for Q11A_3
+1161,1161,IMPQ11A_4,Imputation flag for Q11A_4
+1162,1162,IMPQ11A_5,Imputation flag for Q11A_5
+1163,1163,IMPQ11A_6,Imputation flag for Q11A_6
+1164,1164,IMPQ11BPROV,Imputation flag for Q11BPROV
+1165,1165,IMPQ11BREC,Imputation flag for Q11BREC
+1166,1166,IMPQ11C,Imputation flag for Q11C
+1167,1167,IMPQ12,Imputation flag for Q12
+1168,1168,IMPQ13A_A,Imputation flag for Q13A_A
+1169,1169,IMPQ13D_A,Imputation flag for Q13D_A
+1170,1170,IMPQ13F_A,Imputation flag for Q13F_A
+1171,1171,IMPQ13A_B,Imputation flag for Q13A_B
+1172,1172,IMPQ13D_B,Imputation flag for Q13D_B
+1173,1173,IMPQ13F_B,Imputation flag for Q13F_B
+1174,1174,IMPQ13A_C,Imputation flag for Q13A_C
+1175,1175,IMPQ13B_C,Imputation flag for Q13B_C
+1176,1176,IMPQ13D_C,Imputation flag for Q13D_C
+1177,1177,IMPQ13F_C,Imputation flag for Q13F_C
+1178,1178,IMPQ13A_D,Imputation flag for Q13A_D
+1179,1179,IMPQ13B_D,Imputation flag for Q13B_D
+1180,1180,IMPQ13D_D,Imputation flag for Q13D_D
+1181,1181,IMPQ13F_D,Imputation flag for Q13F_D
+1182,1182,IMPQ13A_E,Imputation flag for Q13A_E
+1183,1183,IMPQ13B_E,Imputation flag for Q13B_E
+1184,1184,IMPQ13D_E,Imputation flag for Q13D_E
+1185,1185,IMPQ13F_E,Imputation flag for Q13F_E
+1186,1186,IMPQ13A_F,Imputation flag for Q13A_F
+1187,1187,IMPQ13B_F,Imputation flag for Q13B_F
+1188,1188,IMPQ13C_F,Imputation flag for Q13C_F
+1189,1189,IMPQ13D_F,Imputation flag for Q13D_F
+1190,1190,IMPQ13F_F,Imputation flag for Q13F_F
+1191,1191,IMPQ13A_G,Imputation flag for Q13A_G
+1192,1192,IMPQ13B_G,Imputation flag for Q13B_G
+1193,1193,IMPQ13C_G,Imputation flag for Q13C_G
+1194,1194,IMPQ13D_G,Imputation flag for Q13D_G
+1195,1195,IMPQ13F_G,Imputation flag for Q13F_G
+1196,1196,IMPQ13A_H,Imputation flag for Q13A_H
+1197,1197,IMPQ13B_H,Imputation flag for Q13B_H
+1198,1198,IMPQ13C_H,Imputation flag for Q13C_H
+1199,1199,IMPQ13D_H,Imputation flag for Q13D_H
+1200,1200,IMPQ13F_H,Imputation flag for Q13F_H
+1201,1201,IMPQ13A_I,Imputation flag for Q13A_I
+1202,1202,IMPQ13B_I,Imputation flag for Q13B_I
+1203,1203,IMPQ13C_I,Imputation flag for Q13C_I
+1204,1204,IMPQ13D_I,Imputation flag for Q13D_I
+1205,1205,IMPQ13F_I,Imputation flag for Q13F_I
+1206,1206,IMPQ13A_J,Imputation flag for Q13A_J
+1207,1207,IMPQ13B_J,Imputation flag for Q13B_J
+1208,1208,IMPQ13C_J,Imputation flag for Q13C_J
+1209,1209,IMPQ13D_J,Imputation flag for Q13D_J
+1210,1210,IMPQ13F_J,Imputation flag for Q13F_J
+1211,1211,IMPQ15,Imputation flag for Q15
+1212,1212,IMPQ16,Imputation flag for Q16
+1213,1213,IMPQ17A,Imputation flag for Q17A
+1214,1214,IMPQ17B,Imputation flag for Q17B
+1215,1215,IMPQ18,Imputation flag for Q18
+1216,1216,IMPQ20,Imputation flag for Q20
+1217,1217,IMPQ22,Imputation flag for Q22
+1218,1218,IMPQ25,Imputation flag for Q25
+1219,1219,IMPQ26,Imputation flag for Q26
+1220,1220,IMPQ27A,Imputation flag for Q27A
+1221,1221,IMPQ27B,Imputation flag for Q27B
+1222,1222,IMPQ27C,Imputation flag for Q27C
+1223,1223,IMPQ27D,Imputation flag for Q27D
+1224,1224,IMPQ27E,Imputation flag for Q27E
+1225,1225,IMPQ27F,Imputation flag for Q27F
+1226,1226,IMPQ28A,Imputation flag for Q28A
+1227,1227,IMPQ28B,Imputation flag for Q28B
+1228,1228,IMPQ28C,Imputation flag for Q28C
+1229,1229,IMPQ28D,Imputation flag for Q28D
+1230,1230,IMPQ28E,Imputation flag for Q28E
+1231,1231,IMPQ28F,Imputation flag for Q28F
+1232,1232,IMPQ28G,Imputation flag for Q28G
+1233,1233,IMPQ28H,Imputation flag for Q28H
+1234,1234,IMPQ29A_1,Imputation flag for Q29A_1
+1235,1235,IMPQ29A_2,Imputation flag for Q29A_2
+1236,1236,IMPQ29A_3,Imputation flag for Q29A_3
+1237,1237,IMPQ29A_4,Imputation flag for Q29A_4
+1238,1238,IMPQ29A_5,Imputation flag for Q29A_5
+1239,1239,IMPQ29A_6,Imputation flag for Q29A_6
+1240,1240,IMPQ29A_7,Imputation flag for Q29A_7
+1241,1241,IMPQ29A_8,Imputation flag for Q29A_8
+1242,1242,IMPQ29A_9,Imputation flag for Q29A_9
+1243,1243,IMPQ29A_10,Imputation flag for Q29A_10
+1244,1244,IMPQ29A_11,Imputation flag for Q29A_11
+1245,1245,IMPQ29A_12,Imputation flag for Q29A_12
+1246,1246,IMPQ29A_13,Imputation flag for Q29A_13
+1247,1247,IMPQ29A_14,Imputation flag for Q29A_14
+1248,1248,IMPQ29A_15,Imputation flag for Q29A_15
+1249,1249,IMPQ29A_16,Imputation flag for Q29A_16
+1250,1250,IMPQ29A_17,Imputation flag for Q29A_17
+1251,1251,IMPQ29A_18,Imputation flag for Q29A_18
+1252,1252,IMPQ29A_19,Imputation flag for Q29A_19
+1253,1253,IMPQ29C_1,Imputation flag for Q29C_1
+1254,1254,IMPQ29C_2,Imputation flag for Q29C_2
+1255,1255,IMPQ29C_3,Imputation flag for Q29C_3
+1256,1256,IMPQ29C_4,Imputation flag for Q29C_4
+1257,1257,IMPQ29C_5,Imputation flag for Q29C_5
+1258,1258,IMPQ29C_6,Imputation flag for Q29C_6
+1259,1259,IMPQ29C_7,Imputation flag for Q29C_7
+1260,1260,IMPQ29C_8,Imputation flag for Q29C_8
+1261,1261,IMPQ29C_9,Imputation flag for Q29C_9
+1262,1262,IMPQ29C_10,Imputation flag for Q29C_10
+1263,1263,IMPQ29C_11,Imputation flag for Q29C_11
+1264,1264,IMPQ29C_12,Imputation flag for Q29C_12
+1265,1265,IMPQ29C_13,Imputation flag for Q29C_13
+1266,1266,IMPQ29C_14,Imputation flag for Q29C_14
+1267,1267,IMPQ29C_15,Imputation flag for Q29C_15
+1268,1268,IMPQ29C_16,Imputation flag for Q29C_16
+1269,1269,IMPQ29C_17,Imputation flag for Q29C_17
+1270,1270,IMPQ29C_18,Imputation flag for Q29C_18
+1271,1271,IMPQ29C_19,Imputation flag for Q29C_19
+1272,1272,IMPQ29C_20,Imputation flag for Q29C_20
+1273,1273,IMPQ29C_21,Imputation flag for Q29C_21
+1274,1274,IMPQ29C_22,Imputation flag for Q29C_22
+1275,1275,IMPQ29C_23,Imputation flag for Q29C_23
+1276,1276,IMPQ29C_24,Imputation flag for Q29C_24
+1277,1277,IMPQ29C_25,Imputation flag for Q29C_25
+1278,1278,IMPQ29C_26,Imputation flag for Q29C_26
+1279,1279,IMPQ29C_27,Imputation flag for Q29C_27
+1280,1280,IMPQ29C_28,Imputation flag for Q29C_28
+1281,1281,IMPQ29C_29,Imputation flag for Q29C_29
+1282,1282,IMPQ29C_30,Imputation flag for Q29C_30
+1283,1283,IMPQ30,Imputation flag for Q30
+1284,1284,IMPQ31,Imputation flag for Q31
+1285,1285,IMPQ32A,Imputation flag for Q32A
+1286,1286,IMPQ32B,Imputation flag for Q32B
+1287,1287,IMPQ33,Imputation flag for Q33
+1288,1288,IMPQ34_1,Imputation flag for Q34_1
+1289,1289,IMPQ34_2,Imputation flag for Q34_2
+1290,1290,IMPQ34_3,Imputation flag for Q34_3
+1291,1291,IMPQ34_4,Imputation flag for Q34_4
+1292,1292,IMPQ35_1,Imputation flag for Q35_1
+1293,1293,IMPQ35_2,Imputation flag for Q35_2
+1294,1294,IMPQ35_3,Imputation flag for Q35_3
+1295,1295,IMPQ35_4,Imputation flag for Q35_4
+1296,1296,IMPQ35_5,Imputation flag for Q35_5
+1297,1297,IMPQ35_6,Imputation flag for Q35_6
+1298,1298,IMPQ35_7,Imputation flag for Q35_7
+1299,1299,IMPQ35_8,Imputation flag for Q35_8
+1300,1300,IMPQ35_9,Imputation flag for Q35_9
+1301,1301,IMPQ35_10,Imputation flag for Q35_10
+1302,1302,IMPQ35_11,Imputation flag for Q35_11
+1303,1303,IMPQ35_12,Imputation flag for Q35_12
+1304,1304,IMPQ35_13,Imputation flag for Q35_13
+1305,1305,IMPQ35_14,Imputation flag for Q35_14
+1306,1306,IMPQ36A_1,Imputation flag for Q36A_1
+1307,1307,IMPQ36B_1,Imputation flag for Q36B_1
+1308,1308,IMPQ36C_1,Imputation flag for Q36C_1
+1309,1309,IMPQ36C_1CY,Imputation flag for Q36C_1CY
+1310,1310,IMPQ36A_2,Imputation flag for Q36A_2
+1311,1311,IMPQ36B_2,Imputation flag for Q36B_2
+1312,1312,IMPQ36C_2,Imputation flag for Q36C_2
+1313,1313,IMPQ36C_2CY,Imputation flag for Q36C_2CY
+1314,1314,IMPQ36A_3,Imputation flag for Q36A_3
+1315,1315,IMPQ36B_3,Imputation flag for Q36B_3
+1316,1316,IMPQ37,Imputation flag for Q37
+1317,1317,IMPQ38,Imputation flag for Q38
+1318,1318,IMPQ39A,Imputation flag for Q39A
+1319,1319,IMPQ40,Imputation flag for Q40
+1320,1320,IMPQ41,Imputation flag for Q41
+1321,1321,IMPQ42,Imputation flag for Q42
+1322,1322,IMPQ43_1,Imputation flag for Q43_1
+1323,1323,IMPQ43_2,Imputation flag for Q43_2
+1324,1324,IMPQ43_3,Imputation flag for Q43_3
+1325,1325,IMPQ43_4,Imputation flag for Q43_4
+1326,1326,IMPQ43_5,Imputation flag for Q43_5
+1327,1327,IMPQ43_6,Imputation flag for Q43_6
+1328,1328,IMPQ43_7,Imputation flag for Q43_7
+1329,1329,IMPQ43_8,Imputation flag for Q43_8
+1330,1330,IMPQ43_9,Imputation flag for Q43_9
+1331,1331,IMPQ43_10,Imputation flag for Q43_10
+1332,1332,IMPQ43_11,Imputation flag for Q43_11
+1333,1333,IMPQ43_12,Imputation flag for Q43_12
+1334,1334,IMPQ43_13,Imputation flag for Q43_13
+1335,1335,IMPQ43_14,Imputation flag for Q43_14
+1336,1336,IMPQ43_15,Imputation flag for Q43_15
+1337,1337,IMPQ43_16,Imputation flag for Q43_16
+1338,1338,IMPQ43_17,Imputation flag for Q43_17
+1339,1339,IMPQ43_18,Imputation flag for Q43_18
+1340,1340,IMPQ43_19,Imputation flag for Q43_19
+1341,1341,IMPQ43_20,Imputation flag for Q43_20
+1342,1342,IMPQ43_21,Imputation flag for Q43_21
+1343,1343,IMPQ43_22,Imputation flag for Q43_22
+1344,1344,IMPQ44,Imputation flag for Q44
+1345,1345,IMPQ45,Imputation flag for Q45
+1346,1346,IMPQ46A,Imputation flag for Q46A
+1347,1347,IMPQ46B,Imputation flag for Q46B
+1348,1348,IMPQ47,Imputation flag for Q47
+1349,1349,IMPQ48,Imputation flag for Q48
+1350,1350,IMPQ49,Imputation flag for Q49
+1351,1351,IMPQ50,Imputation flag for Q50
+1352,1352,IMPQ51,Imputation flag for Q51
+1353,1353,IMPQ51YRS,Imputation flag for Q51YRS
+1354,1354,IMPQ52,Imputation flag for Q52
+1355,1355,IMPQ53,Imputation flag for Q53
+1356,1356,IMPQ54,Imputation flag for Q54
+1357,1357,IMPQ55STATE,Imputation flag for Q55STATE
+1358,1358,IMPQ56_1,Imputation flag for Q56_1
+1359,1359,IMPQ56_2,Imputation flag for Q56_2
+1360,1360,IMPQ56_3,Imputation flag for Q56_3
+1361,1361,IMPQ56_4,Imputation flag for Q56_4
+1362,1362,IMPQ56_5,Imputation flag for Q56_5
+1363,1363,IMPQ56_6,Imputation flag for Q56_6
+1364,1364,IMPQ56_7,Imputation flag for Q56_7
+1365,1365,IMPQ56_8,Imputation flag for Q56_8
+1366,1366,IMPQ56_9,Imputation flag for Q56_9
+1367,1367,IMPQ56_10,Imputation flag for Q56_10
+1368,1368,IMPQ56_11,Imputation flag for Q56_11
+1369,1369,IMPQ56_12,Imputation flag for Q56_12
+1370,1370,IMPQ56_13,Imputation flag for Q56_13
+1371,1371,IMPQ56_14,Imputation flag for Q56_14
+1372,1372,IMPQ56_15,Imputation flag for Q56_15
+1373,1373,IMPQ56_16,Imputation flag for Q56_16
+1374,1374,IMPQ56_17,Imputation flag for Q56_17
+1375,1375,IMPQ56_18,Imputation flag for Q56_18
+1376,1376,IMPQ56_19,Imputation flag for Q56_19
+1377,1377,IMPQ56_20,Imputation flag for Q56_20
+1378,1378,IMPQ56_21,Imputation flag for Q56_21
+1379,1379,IMPQ56_22,Imputation flag for Q56_22
+1380,1380,IMPQ56_23,Imputation flag for Q56_23
+1381,1381,IMPQ56_24,Imputation flag for Q56_24
+1382,1382,IMPQ57,Imputation flag for Q57
+1383,1383,IMPQ58,Imputation flag for Q58
+1384,1384,IMPQ60,Imputation flag for Q60
+1385,1385,IMPQ61STATE,Imputation flag for Q61STATE
+1386,1386,IMPQ62,Imputation flag for Q62
+1387,1387,IMPQ63,Imputation flag for Q63
+1388,1388,IMPQ64A,Imputation flag for Q64A
+1389,1389,IMPQ64B_1,Imputation flag for Q64B_1
+1390,1390,IMPQ64B_2,Imputation flag for Q64B_2
+1391,1391,IMPQ64B_3,Imputation flag for Q64B_3
+1392,1392,IMPQ64B_4,Imputation flag for Q64B_4
+1393,1393,IMPQ64B_5,Imputation flag for Q64B_5
+1394,1394,IMPQ65_1,Imputation flag for Q65_1
+1395,1395,IMPQ65_2,Imputation flag for Q65_2
+1396,1396,IMPQ65_3,Imputation flag for Q65_3
+1397,1397,IMPQ65_4,Imputation flag for Q65_4
+1398,1398,IMPQ65_5,Imputation flag for Q65_5
+1399,1399,IMPQ65_6,Imputation flag for Q65_6
+1400,1400,IMPQ65_7,Imputation flag for Q65_7
+1401,1401,IMPQ65_8,Imputation flag for Q65_8
+1402,1402,IMPQ65_9,Imputation flag for Q65_9
+1403,1403,IMPQ65_10,Imputation flag for Q65_10
+1404,1404,IMPQ65_11,Imputation flag for Q65_11
+1405,1405,IMPQ65_12,Imputation flag for Q65_12
+1406,1406,IMPQ65_13,Imputation flag for Q65_13
+1407,1407,IMPQ65_14,Imputation flag for Q65_14
+1408,1408,IMPQ65_15,Imputation flag for Q65_15
+1409,1409,IMPQ65_16,Imputation flag for Q65_16
+1410,1410,IMPQ65_17,Imputation flag for Q65_17
+1411,1411,IMPQ65_18,Imputation flag for Q65_18
+1412,1412,IMPQ65_19,Imputation flag for Q65_19
+1413,1413,IMPQ65_20,Imputation flag for Q65_20
+1414,1414,IMPQ65_21,Imputation flag for Q65_21
+1415,1415,IMPQ65_22,Imputation flag for Q65_22
+1416,1416,IMPQ65_23,Imputation flag for Q65_23
+1417,1417,IMPQ65_24,Imputation flag for Q65_24
+1418,1418,IMPQ65_25,Imputation flag for Q65_25
+1419,1419,IMPQ65_26,Imputation flag for Q65_26
+1420,1420,IMPQ65_27,Imputation flag for Q65_27
+1421,1421,IMPQ66,Imputation flag for Q66
+1422,1422,IMPQ67_1,Imputation flag for Q67_1
+1423,1423,IMPQ67_2,Imputation flag for Q67_2
+1424,1424,IMPQ67_3,Imputation flag for Q67_3
+1425,1425,IMPQ67_4,Imputation flag for Q67_4
+1426,1426,IMPQ67_5,Imputation flag for Q67_5
+1427,1427,IMPQ68,Imputation flag for Q68
+1428,1439,RKRNWGTA,Raked weight
+1440,1451,RKRNWGTA1,Raked weight 1
+1452,1463,RKRNWGTA2,Raked weight 2
+1464,1475,RKRNWGTA3,Raked weight 3
+1476,1487,RKRNWGTA4,Raked weight 4
+1488,1499,RKRNWGTA5,Raked weight 5
+1500,1511,RKRNWGTA6,Raked weight 6
+1512,1523,RKRNWGTA7,Raked weight 7
+1524,1535,RKRNWGTA8,Raked weight 8
+1536,1547,RKRNWGTA9,Raked weight 9
+1548,1559,RKRNWGTA10,Raked weight 10
+1560,1571,RKRNWGTA11,Raked weight 11
+1572,1583,RKRNWGTA12,Raked weight 12
+1584,1595,RKRNWGTA13,Raked weight 13
+1596,1607,RKRNWGTA14,Raked weight 14
+1608,1619,RKRNWGTA15,Raked weight 15
+1620,1631,RKRNWGTA16,Raked weight 16
+1632,1643,RKRNWGTA17,Raked weight 17
+1644,1655,RKRNWGTA18,Raked weight 18
+1656,1667,RKRNWGTA19,Raked weight 19
+1668,1679,RKRNWGTA20,Raked weight 20
+1680,1691,RKRNWGTA21,Raked weight 21
+1692,1703,RKRNWGTA22,Raked weight 22
+1704,1715,RKRNWGTA23,Raked weight 23
+1716,1727,RKRNWGTA24,Raked weight 24
+1728,1739,RKRNWGTA25,Raked weight 25
+1740,1751,RKRNWGTA26,Raked weight 26
+1752,1763,RKRNWGTA27,Raked weight 27
+1764,1775,RKRNWGTA28,Raked weight 28
+1776,1787,RKRNWGTA29,Raked weight 29
+1788,1799,RKRNWGTA30,Raked weight 30
+1800,1811,RKRNWGTA31,Raked weight 31
+1812,1823,RKRNWGTA32,Raked weight 32
+1824,1835,RKRNWGTA33,Raked weight 33
+1836,1847,RKRNWGTA34,Raked weight 34
+1848,1859,RKRNWGTA35,Raked weight 35
+1860,1871,RKRNWGTA36,Raked weight 36
+1872,1883,RKRNWGTA37,Raked weight 37
+1884,1895,RKRNWGTA38,Raked weight 38
+1896,1907,RKRNWGTA39,Raked weight 39
+1908,1919,RKRNWGTA40,Raked weight 40
+1920,1931,RKRNWGTA41,Raked weight 41
+1932,1943,RKRNWGTA42,Raked weight 42
+1944,1955,RKRNWGTA43,Raked weight 43
+1956,1967,RKRNWGTA44,Raked weight 44
+1968,1979,RKRNWGTA45,Raked weight 45
+1980,1991,RKRNWGTA46,Raked weight 46
+1992,2003,RKRNWGTA47,Raked weight 47
+2004,2015,RKRNWGTA48,Raked weight 48
+2016,2027,RKRNWGTA49,Raked weight 49
+2028,2039,RKRNWGTA50,Raked weight 50
+2040,2051,RKRNWGTA51,Raked weight 51
+2052,2063,RKRNWGTA52,Raked weight 52
+2064,2075,RKRNWGTA53,Raked weight 53
+2076,2087,RKRNWGTA54,Raked weight 54
+2088,2099,RKRNWGTA55,Raked weight 55
+2100,2111,RKRNWGTA56,Raked weight 56
+2112,2123,RKRNWGTA57,Raked weight 57
+2124,2135,RKRNWGTA58,Raked weight 58
+2136,2147,RKRNWGTA59,Raked weight 59
+2148,2159,RKRNWGTA60,Raked weight 60
+2160,2171,RKRNWGTA61,Raked weight 61
+2172,2183,RKRNWGTA62,Raked weight 62
+2184,2195,RKRNWGTA63,Raked weight 63
+2196,2207,RKRNWGTA64,Raked weight 64
+2208,2219,RKRNWGTA65,Raked weight 65
+2220,2231,RKRNWGTA66,Raked weight 66
+2232,2243,RKRNWGTA67,Raked weight 67
+2244,2255,RKRNWGTA68,Raked weight 68
+2256,2267,RKRNWGTA69,Raked weight 69
+2268,2279,RKRNWGTA70,Raked weight 70
+2280,2291,RKRNWGTA71,Raked weight 71
+2292,2303,RKRNWGTA72,Raked weight 72
+2304,2315,RKRNWGTA73,Raked weight 73
+2316,2327,RKRNWGTA74,Raked weight 74
+2328,2339,RKRNWGTA75,Raked weight 75
+2340,2351,RKRNWGTA76,Raked weight 76
+2352,2363,RKRNWGTA77,Raked weight 77
+2364,2375,RKRNWGTA78,Raked weight 78
+2376,2387,RKRNWGTA79,Raked weight 79
+2388,2399,RKRNWGTA80,Raked weight 80
+2400,2411,RKRNWGTA81,Raked weight 81
+2412,2423,RKRNWGTA82,Raked weight 82
+2424,2435,RKRNWGTA83,Raked weight 83
+2436,2447,RKRNWGTA84,Raked weight 84
+2448,2459,RKRNWGTA85,Raked weight 85
+2460,2471,RKRNWGTA86,Raked weight 86
+2472,2483,RKRNWGTA87,Raked weight 87
+2484,2495,RKRNWGTA88,Raked weight 88
+2496,2507,RKRNWGTA89,Raked weight 89
+2508,2519,RKRNWGTA90,Raked weight 90
+2520,2531,RKRNWGTA91,Raked weight 91
+2532,2543,RKRNWGTA92,Raked weight 92
+2544,2555,RKRNWGTA93,Raked weight 93
+2556,2567,RKRNWGTA94,Raked weight 94
+2568,2579,RKRNWGTA95,Raked weight 95
+2580,2591,RKRNWGTA96,Raked weight 96
+2592,2603,RKRNWGTA97,Raked weight 97
+2604,2615,RKRNWGTA98,Raked weight 98
+2616,2627,RKRNWGTA99,Raked weight 99
+2628,2639,RKRNWGTA100,Raked weight 100
