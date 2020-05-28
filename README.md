@@ -1,5 +1,13 @@
 # COVID-19 Related Data Sources
 
-
-### Registered Nurses
-- [Health Resources & Services Administration](https://data.hrsa.gov/topics/health-workforce/nursing-workforce-survey-data#RegisteredNurses)
+| name | application | data_type | geographical | geospatial | resolution | source |
+|------|-------------|-----------|--------------|------------|------------|------|
+|HRSA Area Health Resource Files | Nurse Allocation            |  ASCII/SAS         |  yes            |   no         |   state/county         |      [Link](https://data.hrsa.gov/data/download#AHRF)|
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
+|      |             |           |              |            |            |      |
