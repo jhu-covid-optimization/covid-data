@@ -34,3 +34,14 @@
 | Education Week: Coronavirus and School Closures | School closings     |               nan | XLSX        | yes            | no           | state        | [Link](https://www.edweek.org/ew/section/multimedia/map-coronavirus-and-school-closures.html)           |
 | MCH COVID-19 Impact: School Closures            | School closings     |               nan | CSV         | yes            | no           | state        | [Link](https://www.mchdata.com/covid19/schoolclosings)                                                  |
 | National Governors Association                  | State actions       |               nan | XLSX        | yes            | no           | state        | [Link](https://www.nga.org/coronavirus/#states)                                                         |
+
+## Social Distancing
+| name                                              | application                   |   attributes_used | data_type   | geographical   | geospatial   | resolution   | source                                                               |
+|:--------------------------------------------------|:------------------------------|------------------:|:------------|:---------------|:-------------|:-------------|:---------------------------------------------------------------------|
+| Google COVID-19 Community Mobility Reports        | Google Maps mobility insights |               nan | PDF         | yes            | no           | county/state | [Link](https://www.google.com/covid19/mobility/)                     |
+| Cuebiq Mobility Insights                          | Mobility                      |               nan | nan         | nan            | nan          | nan          | [Link](https://www.cuebiq.com/visitation-insights-covid19/)          |
+| Data for Mobility Changes in Response to COVID-19 | Mobility                      |               nan | CSV         | yes            | no           | county       | [Link](https://github.com/descarteslabs/DL-COVID-19)                 |
+| Unacast Social Distancing Scoreboard              | Mobility                      |               nan | CSV         | yes            | no           | county       | [Link](https://www.unacast.com/covid19/social-distancing-scoreboard) |
+| Facebook COVID-19 Symptom Map                     | nan                           |               nan | nan         | nan            | nan          | nan          | [Link](https://dataforgood.fb.com/docs/covid19/)                     |
+| OpenTable State of Industry                       | nan                           |               nan | CSV         | yes            | no           | city/state   | [Link](https://www.opentable.com/state-of-industry)                  |
+| SafeGraph Mobility Patterns                       | nan                           |               nan | nan         | nan            | nan          | nan          | [Link](https://docs.safegraph.com/docs/weekly-patterns)              |
