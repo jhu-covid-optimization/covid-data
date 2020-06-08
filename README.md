@@ -1,3 +1,11 @@
+Contents:
+- [Confirmed Cases](https://github.com/jhu-covid-optimization/covid-data#confirmed-cases)
+- [Demographics](https://github.com/jhu-covid-optimization/covid-data#demographics)
+- [Hospitals](https://github.com/jhu-covid-optimization/covid-data#hospitals)
+- [Patient Forecasting](https://github.com/jhu-covid-optimization/covid-data#patient-forecasting)
+- [Policies and Interventions](https://github.com/jhu-covid-optimization/covid-data#policies-and-interventions)
+- [https://github.com/jhu-covid-optimization/covid-data#social-distancing](Social Distancing)
+
 ## Confirmed Cases
 | name                            |   application |   attributes_used | data_type   | geographical   | geospatial   | resolution   | source                                                                                    |
 |:--------------------------------|--------------:|------------------:|:------------|:---------------|:-------------|:-------------|:------------------------------------------------------------------------------------------|
