@@ -1,3 +1,12 @@
+## Confirmed Cases
+| name                            |   application |   attributes_used | data_type   | geographical   | geospatial   | resolution   | source                                                                                    |
+|:--------------------------------|--------------:|------------------:|:------------|:---------------|:-------------|:-------------|:------------------------------------------------------------------------------------------|
+| CSSE 2019-nCoV                  |           nan |               nan | CSV         | yes            | no           | state        | [Link](https://github.com/CSSEGISandData/COVID-19)                                        |
+| European CDC                    |           nan |               nan | XLSX        | yes            | no           | country      | [Link](https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases)           |
+| NYTimes COVID-19 Data           |           nan |               nan | CSV         | yes            | no           | state/county | [Link](https://github.com/nytimes/covid-19-data)                                          |
+| USA Facts Coronavirus Locations |           nan |               nan | CSV         | yes            | no           | county       | [Link](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/)              |
+| WHO COVID-19 Situation Reports  |           nan |               nan | PDF         | yes            | no           | country      | [Link](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports) |
+
 ## Hospitals
 | name                                                                      | application                          | attributes_used        | data_type     | geographical   | geospatial   | resolution        | source                                                                                                                                                           |
 |:--------------------------------------------------------------------------|:-------------------------------------|:-----------------------|:--------------|:---------------|:-------------|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
