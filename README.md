@@ -7,6 +7,15 @@
 | USA Facts Coronavirus Locations |           nan |               nan | CSV         | yes            | no           | county       | [Link](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/)              |
 | WHO COVID-19 Situation Reports  |           nan |               nan | PDF         | yes            | no           | country      | [Link](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports) |
 
+## Demographics
+| name                                                                               | application                |   attributes_used | data_type   | geographical   | geospatial   | resolution         | source                                                                                                               |
+|:-----------------------------------------------------------------------------------|:---------------------------|------------------:|:------------|:---------------|:-------------|:-------------------|:---------------------------------------------------------------------------------------------------------------------|
+| COVID tracking associated data                                                     | ACS, Census, KFF, CDC data |               nan | CSV         | yes            | no           | state              | [Link](https://github.com/COVID19Tracking/associated-data)                                                           |
+| HDX United States: High Resolution Population Density Maps + Demographic Estimates | Population density         |               nan | GeoTiff     | nan            | nan          | country            | [Link](https://data.humdata.org/dataset/united-states-high-resolution-population-density-maps-demographic-estimates) |
+| JHU CSSE Demographic Information                                                   | nan                        |               nan | CSV         | yes            | no           | county             | [Link](https://github.com/JieYingWu/COVID-19_US_County-level_Summaries)                                              |
+| US Census American Community Survey                                                | nan                        |               nan | CSV         | yes            | no           | Census Block Group | [Link](https://www.census.gov/programs-surveys/acs)                                                                  |
+​
+
 ## Hospitals
 | name                                                                      | application                          | attributes_used        | data_type     | geographical   | geospatial   | resolution        | source                                                                                                                                                           |
 |:--------------------------------------------------------------------------|:-------------------------------------|:-----------------------|:--------------|:---------------|:-------------|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
