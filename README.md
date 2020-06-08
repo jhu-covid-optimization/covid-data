@@ -4,7 +4,8 @@ Contents:
 - [Hospitals](https://github.com/jhu-covid-optimization/covid-data#hospitals)
 - [Patient Forecasting](https://github.com/jhu-covid-optimization/covid-data#patient-forecasting)
 - [Policies and Interventions](https://github.com/jhu-covid-optimization/covid-data#policies-and-interventions)
-- [https://github.com/jhu-covid-optimization/covid-data#social-distancing](Social Distancing)
+- [Social Distancing](https://github.com/jhu-covid-optimization/covid-data#social-distancing)
+- [Other Lists](https://github.com/jhu-covid-optimization/covid-data#other-data-lists)
 
 ## Confirmed Cases
 | name                            |   application |   attributes_used | data_type   | geographical   | geospatial   | resolution   | source                                                                                    |
@@ -82,3 +83,6 @@ Contents:
 | Facebook COVID-19 Symptom Map                     | nan                           |               nan | nan         | nan            | nan          | nan          | [Link](https://dataforgood.fb.com/docs/covid19/)                     |
 | OpenTable State of Industry                       | nan                           |               nan | CSV         | yes            | no           | city/state   | [Link](https://www.opentable.com/state-of-industry)                  |
 | SafeGraph Mobility Patterns                       | nan                           |               nan | nan         | nan            | nan          | nan          | [Link](https://docs.safegraph.com/docs/weekly-patterns)              |
+
+## Other Data Lists
+- [Covid19 Response SafeGraph Data Products](https://docs.google.com/spreadsheets/d/1UNWvPzkUTTlXBZ6M6iGhM_7sr8h-MxsZdE7iOszkAmk/edit#gid=0)
