@@ -1,11 +1,17 @@
-let container = document.getElementById("table-area");
+const selected_cols = [
+	"name",
+	"application",
+	"geographical",
+	"resolution",
+	"source",
+];
 
+let container = document.getElementById("table-area");
 toTitlecase = s => s.split(' ').map(w => w[0].toUpperCase() + w.substr(1)).join(' ');
 
 function setupTable(table_data, is_wide=false) {
 
-	let cols = Object.keys(table_data[0])
-	let colTitles = cols.map(c => toTitlecase(c.replace(/_/g, " ")));
+	let colTitles = selected_cols.map(c => toTitlecase(c.replace(/_/g, " ")));
 
 	let table = document.createElement("table");
 	table.className = "table is-hoverable is-fullwidth";
@@ -25,18 +31,21 @@ function setupTable(table_data, is_wide=false) {
 
 	for (let i = 0; i < table_data.length; i++) {
 		let row = document.createElement("tr");
-		for (let j = 0; j < cols.length; j++) {
+		selected_cols.forEach(colname => {
 			let el = document.createElement("td");
-			let d = table_data[i][cols[j]];
-			if (typeof d == "undefined") {
+			let val = table_data[i][colname];
+			if (typeof val == "undefined" || val == null) {
 				el.innerHTML = "";
-			} else if (d == null) {
-				el.innerHTML = "";
+			} else if (colname == "source") {
+				let link = document.createElement("a");
+				link.innerHTML = val;
+				link.href = val;
+				el.appendChild(link);
 			} else {
-				el.innerHTML = d;
+				el.innerHTML = val;
 			}
 			row.appendChild(el);
-		}
+		});
 		tablebody.appendChild(row);
 	}
 
