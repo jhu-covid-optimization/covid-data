@@ -65,15 +65,16 @@ setupTable(data, is_wide=true);
 
 let data_raw = [];
 for (let i = 0; i < data.length; i++) {
-	data_raw.push(JSON.stringify(data[i]));
+	data_raw.push(JSON.stringify(data[i]).toLowerCase());
 }
 
 let search_button = document.getElementById("search-button");
 let search_input = document.getElementById("search-text");
-search_button.addEventListener("click", function(e) {
+
+function search(e) {
 	e.preventDefault();
 
-	let search_text = search_input.value;
+	let search_text = search_input.value.toLowerCase();
 	let data_filtered = [];
 	for (let i = 0; i < data.length; i++) {
 		let found = data_raw[i].includes(search_text);
@@ -84,4 +85,12 @@ search_button.addEventListener("click", function(e) {
 
 	container.innerHTML = "";
 	setupTable(data_filtered, is_wide=true);
+}
+
+search_button.addEventListener("click", search);
+search_input.addEventListener("keyup", e => {
+	if (e.keyCode === 13) {
+		e.preventDefault();
+		search(e);
+	}
 });
