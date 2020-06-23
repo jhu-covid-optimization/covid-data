@@ -15,6 +15,8 @@ const filter_cols = [
 	"resolution",
 ];
 
+data.sort((a,b) => a.name >= b.name ? 1 : -1);
+
 let container = document.getElementById("table-area");
 toTitlecase = s => s.split(' ').map(w => w[0].toUpperCase() + w.substr(1)).join(' ');
 
@@ -285,7 +287,7 @@ function createSortIcon() {
 }
 
 function sortColumn(e) {
-	let colHeaderElement = e.target;
+	let colHeaderElement = e.currentTarget;
 
 	for (let t of colHeaderElement.parentElement.parentElement.children) {
 		let temp = t.firstChild;

@@ -715,23 +715,6 @@ const data = [
     },
     {
         "index":0,
-        "name":null,
-        "application":null,
-        "public_access":null,
-        "data_type":null,
-        "geographical":null,
-        "geospatial":null,
-        "resolution":null,
-        "source":null,
-        "category":"Other Data Lists",
-        "description":null,
-        "Unnamed: 0":"SafeGraph",
-        "Unnamed: 1":"https:\/\/docs.google.com\/spreadsheets\/d\/1UNWvPzkUTTlXBZ6M6iGhM_7sr8h-MxsZdE7iOszkAmk\/edit#gid=0",
-        "Unnamed: 8":null,
-        "attributes_used":null
-    },
-    {
-        "index":0,
         "name":"JHU CSSE COVID-19 data",
         "application":"COVID-19 statistics",
         "public_access":"yes",
