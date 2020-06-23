@@ -17,10 +17,15 @@ const filter_cols = [
 
 data.sort((a,b) => a.name >= b.name ? 1 : -1);
 
+let currentInd = [];
+for (let i = 0; i < data.length; i++) {
+	currentInd.push(i);
+}
+
 let container = document.getElementById("table-area");
 toTitlecase = s => s.split(' ').map(w => w[0].toUpperCase() + w.substr(1)).join(' ');
 
-function setupTable(table_data, is_wide=false, replace_body=false) {
+function setupTable(table_data, is_wide=false, replace=false) {
 
 	let colTitles = selected_cols.map(c => toTitlecase(c.replace(/_/g, " ")));
 
@@ -42,7 +47,7 @@ function setupTable(table_data, is_wide=false, replace_body=false) {
 		elSpan.dataset.colname = colname;
 		elSpan.dataset.sortActive = false;
 		elSpan.dataset.sortDir = null;
-		elSpan.addEventListener("click", sortColumn);
+		elSpan.addEventListener("click", e => sortColumn(e.currentTarget));
 
 		elSpan.innerHTML = colname;
 		elSpan.appendChild(createSortIcon());
@@ -52,7 +57,7 @@ function setupTable(table_data, is_wide=false, replace_body=false) {
 	});
 	tablehead.appendChild(header);
 
-	for (let i = 0; i < table_data.length; i++) {
+	for (const i of currentInd) {
 		let row = document.createElement("tr");
 		selected_cols.forEach(colname => {
 			let el = document.createElement("td");
@@ -72,7 +77,7 @@ function setupTable(table_data, is_wide=false, replace_body=false) {
 		tablebody.appendChild(row);
 	}
 
-	if (replace_body) {
+	if (replace) {
 		const temp = document.getElementById("main-table");
 		temp.tBodies[0].replaceWith(tablebody);
 		return;
@@ -104,16 +109,16 @@ function search(e) {
 	e.preventDefault();
 
 	let search_text = search_input.value.toLowerCase();
-	let data_filtered = [];
+	currentInd = [];
 	for (let i = 0; i < data.length; i++) {
 		let found = data_raw[i].includes(search_text);
 		if (found) {
-			data_filtered.push(data[i]);
+			currentInd.push(i);
 		}
 	}
 
-	container.innerHTML = "";
-	setupTable(data_filtered, is_wide=true);
+	resetSort();
+	setupTable(data, is_wide=true, replace=true);
 }
 
 search_button.addEventListener("click", search);
@@ -241,30 +246,42 @@ function createOptions(opts, select) {
 function filterTable() {
 	const filterby = document.getElementById("filter-by-select").value.toLowerCase();
 	if (filterby === "none") {
-		container.innerHTML = "";
-		setupTable(data, is_wide=true);
+		resetTable();
 		return;
 	};
 
 	const filterValue = document.getElementById("filter-value-select").value.toLowerCase();
 
-	let filteredData = [];
+	currentInd = [];
 	for (let i = 0; i < data.length; i++) {
 		if (String(data[i][filterby]).toLowerCase() == filterValue) {
-			filteredData.push(data[i]);
+			currentInd.push(i);
 		}
 	}
 
-	container.innerHTML = "";
-	setupTable(filteredData, is_wide=true);
+	resetSort();
+	setupTable(data, is_wide=true, replace=true);
 }
 
 function resetTable() {
-	container.innerHTML = "";
-	setupTable(data, is_wide=true);
+	resetSort();
+	resetFilter();
+	resetSearch();
 
+	currentInd = [];
+	for (let i = 0; i < data.length; i++) {
+		currentInd.push(i);
+	}
+	setupTable(data, is_wide=true, replace=true);
+}
+
+function resetFilter() {
 	document.getElementById("filter-by-select").selectedIndex = 0;
 	updateFilterBy();
+}
+
+function resetSearch() {
+	document.getElementById("search-text").value = "";
 }
 
 function createSortIcon() {
@@ -286,8 +303,7 @@ function createSortIcon() {
 	return iconContainer;
 }
 
-function sortColumn(e) {
-	let colHeaderElement = e.currentTarget;
+function sortColumn(colHeaderElement) {
 
 	for (let t of colHeaderElement.parentElement.parentElement.children) {
 		let temp = t.firstChild;
@@ -302,30 +318,42 @@ function sortColumn(e) {
 	if (colHeaderElement.dataset.sortActive == "true") {
 		if (colHeaderElement.dataset.sortDir == "up") {
 			colHeaderElement.dataset.sortDir = "down";
-			colHeaderElement.lastChild.firstChild.style.opacity = 0;
-			colHeaderElement.lastChild.lastChild.style.opacity = 100;
-		} else {
-			colHeaderElement.dataset.sortDir = "up";
 			colHeaderElement.lastChild.firstChild.style.opacity = 100;
 			colHeaderElement.lastChild.lastChild.style.opacity = 0;
+		} else {
+			colHeaderElement.dataset.sortDir = "up";
+			colHeaderElement.lastChild.firstChild.style.opacity = 0;
+			colHeaderElement.lastChild.lastChild.style.opacity = 100;
 		}
 	} else {
 		colHeaderElement.dataset.sortActive = true;
 		colHeaderElement.dataset.sortDir = "up";
-		colHeaderElement.lastChild.firstChild.style.opacity = 100;
-		colHeaderElement.lastChild.lastChild.style.opacity = 0;
+		colHeaderElement.lastChild.firstChild.style.opacity = 0;
+		colHeaderElement.lastChild.lastChild.style.opacity = 100;
 	}
 
 	const sortCol = colHeaderElement.dataset.colname.toLowerCase();
 	let values = data.map(d => d[sortCol]);
 	let ind = argsort(values);
-	let sortedData = ind.map(i => data[i]);
+	ind = ind.filter(i => currentInd.indexOf(i) >= 0);
 
 	if (colHeaderElement.dataset.sortDir == "down") {
-		sortedData = sortedData.reverse();
+		ind = ind.reverse();
 	}
 
-	setupTable(sortedData, is_wide=true, replace_body=true);
+	currentInd = ind;
+	setupTable(data, is_wide=true, replace=true);
+}
+
+function resetSort() {
+	for (let t of document.getElementById("main-table").tHead.firstChild.children) {
+		let temp = t.firstChild;
+		temp.dataset.sortActive = false;
+		temp.dataset.sortDir = null;
+		temp.lastChild.firstChild.style.opacity = 100;
+		temp.lastChild.lastChild.style.opacity = 100;
+	}
+	currentInd.sort();
 }
 
 argsort = arr => arr.map((x,i) => [i,x]).sort((a,b) => String(a[1]).toLowerCase() >= String(b[1]).toLowerCase() ? 1 : -1).map(x => x[0]);
