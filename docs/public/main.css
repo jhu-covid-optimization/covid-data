@@ -11,3 +11,15 @@
 #search-button {
 	width: 100%;
 }
+
+.field:not(:last-child) {
+	margin-bottom: 0px !important;
+}
+
+.field:first-child {
+	padding-left: 0;
+}
+
+#table-area {
+	margin-top: 20px;
+}
