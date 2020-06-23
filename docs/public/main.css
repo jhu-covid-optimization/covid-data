@@ -23,3 +23,32 @@
 #table-area {
 	margin-top: 20px;
 }
+
+.sort-icon-container {
+	height: 1.5rem;
+	padding-left: 5px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+.sort-icon {
+	height: 40%;
+}
+
+.sort-icon-up {
+	margin-bottom: -0.05em;
+}
+
+.sort-icon-down {
+	margin-top: -0.05em;
+}
+
+th {
+	white-space: nowrap;
+}
+
+.th-span {
+	cursor: pointer;
+}

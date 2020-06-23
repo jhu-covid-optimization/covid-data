@@ -18,11 +18,12 @@ const filter_cols = [
 let container = document.getElementById("table-area");
 toTitlecase = s => s.split(' ').map(w => w[0].toUpperCase() + w.substr(1)).join(' ');
 
-function setupTable(table_data, is_wide=false) {
+function setupTable(table_data, is_wide=false, replace_body=false) {
 
 	let colTitles = selected_cols.map(c => toTitlecase(c.replace(/_/g, " ")));
 
 	let table = document.createElement("table");
+	table.id = "main-table";
 	table.className = "table is-hoverable is-fullwidth";
 
 	let tablehead = document.createElement("thead");
@@ -33,7 +34,18 @@ function setupTable(table_data, is_wide=false) {
 	let header = document.createElement("tr");
 	colTitles.forEach(colname => {
 		let el = document.createElement("th");
-		el.innerHTML = colname;
+		let elSpan = document.createElement("span");
+
+		elSpan.className = "th-span";
+		elSpan.dataset.colname = colname;
+		elSpan.dataset.sortActive = false;
+		elSpan.dataset.sortDir = null;
+		elSpan.addEventListener("click", sortColumn);
+
+		elSpan.innerHTML = colname;
+		elSpan.appendChild(createSortIcon());
+
+		el.appendChild(elSpan);
 		header.appendChild(el);
 	});
 	tablehead.appendChild(header);
@@ -56,6 +68,12 @@ function setupTable(table_data, is_wide=false) {
 			row.appendChild(el);
 		});
 		tablebody.appendChild(row);
+	}
+
+	if (replace_body) {
+		const temp = document.getElementById("main-table");
+		temp.tBodies[0].replaceWith(tablebody);
+		return;
 	}
 
 	let tableContainer = container;
@@ -246,5 +264,68 @@ function resetTable() {
 	document.getElementById("filter-by-select").selectedIndex = 0;
 	updateFilterBy();
 }
+
+function createSortIcon() {
+	let iconContainer = document.createElement("div");
+	iconContainer.className = "sort-icon-container";
+
+	let upButton = document.createElement("img");
+	let downButton = document.createElement("img");
+
+	upButton.src = "public/caret-up-outline.svg";
+	downButton.src = "public/caret-down-outline.svg";
+
+	upButton.className = "sort-icon sort-icon-up";
+	downButton.className = "sort-icon sort-icon-down";
+
+	iconContainer.appendChild(upButton);
+	iconContainer.appendChild(downButton);
+
+	return iconContainer;
+}
+
+function sortColumn(e) {
+	let colHeaderElement = e.target;
+
+	for (let t of colHeaderElement.parentElement.parentElement.children) {
+		let temp = t.firstChild;
+		if (temp != colHeaderElement) {
+			temp.dataset.sortActive = false;
+			temp.dataset.sortDir = null;
+			temp.lastChild.firstChild.style.opacity = 100;
+			temp.lastChild.lastChild.style.opacity = 100;
+		}
+	}
+
+	if (colHeaderElement.dataset.sortActive == "true") {
+		if (colHeaderElement.dataset.sortDir == "up") {
+			colHeaderElement.dataset.sortDir = "down";
+			colHeaderElement.lastChild.firstChild.style.opacity = 0;
+			colHeaderElement.lastChild.lastChild.style.opacity = 100;
+		} else {
+			colHeaderElement.dataset.sortDir = "up";
+			colHeaderElement.lastChild.firstChild.style.opacity = 100;
+			colHeaderElement.lastChild.lastChild.style.opacity = 0;
+		}
+	} else {
+		colHeaderElement.dataset.sortActive = true;
+		colHeaderElement.dataset.sortDir = "up";
+		colHeaderElement.lastChild.firstChild.style.opacity = 100;
+		colHeaderElement.lastChild.lastChild.style.opacity = 0;
+	}
+
+	const sortCol = colHeaderElement.dataset.colname.toLowerCase();
+	let values = data.map(d => d[sortCol]);
+	let ind = argsort(values);
+	let sortedData = ind.map(i => data[i]);
+
+	if (colHeaderElement.dataset.sortDir == "down") {
+		sortedData = sortedData.reverse();
+	}
+
+	setupTable(sortedData, is_wide=true, replace_body=true);
+}
+
+argsort = arr => arr.map((x,i) => [i,x]).sort((a,b) => String(a[1]).toLowerCase() >= String(b[1]).toLowerCase() ? 1 : -1).map(x => x[0]);
 
 setupFilterForm();
